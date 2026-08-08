@@ -1,0 +1,40 @@
+=== controllers ===
+effort_controller       forward_command_controller/ForwardCommandController  active
+joint_state_broadcaster joint_state_broadcaster/JointStateBroadcaster        active
+=== interfaces ===
+command interfaces
+	joint1/effort [available] [claimed]
+	joint2/effort [available] [claimed]
+state interfaces
+	joint1/effort
+	joint1/position
+	joint1/velocity
+	joint2/effort
+	joint2/position
+	joint2/velocity
+=== torque topic ===
+Type: std_msgs/msg/Float64MultiArray
+Publisher count: 1
+Subscription count: 1
+=== joint state sample ===
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 0
+    nanosec: 0
+  frame_id: base_link
+name:
+- joint1
+- joint2
+position:
+- 0.6441380247008391
+- -0.6446340367539443
+velocity:
+- 1.6730877602705307e-05
+- -0.00022059062327240548
+effort:
+- 16.66999792328062
+- 4.905112112740368
+---
